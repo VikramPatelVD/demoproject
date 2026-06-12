@@ -28,8 +28,8 @@ jobs:
       - name: Deploy to Simply        
         uses: talunzhang/auto-web-deploy@v1.0.1
         with:
-          website-name: faswinsoftware-001-site2
+          website-name: faswinsoftware-001-site2.jtempurl.com
           server-computer-name: https://win8104.site4now.net:8172
-          server-username: faswinsoftware-001
+          server-username: faswinsoftware
           server-password: Fasweb@2024
           source-path: '\backend\publish\'

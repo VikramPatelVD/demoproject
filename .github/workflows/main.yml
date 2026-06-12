@@ -30,6 +30,6 @@ jobs:
         with:
           website-name: faswin.in
           server-computer-name: https://win8104.site4now.net:8172
-          server-username: ccftp
+          server-username: faswinsoftware
           server-password: Fasweb@2024
           source-path: '\backend\publish\'

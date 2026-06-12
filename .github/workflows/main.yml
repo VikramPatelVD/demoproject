@@ -20,4 +20,4 @@ jobs:
           server-username: faswinsoftware-001
           server-password: Fasweb@2024
           source-path: backend/publish
-          target-path: /cc/
+          target-path: /

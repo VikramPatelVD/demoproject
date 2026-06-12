@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to Simply        
         uses: talunzhang/auto-web-deploy@v1.0.1
         with:
-          website-name: faswinsoftware-001-site2.jtempurl.com
+          website-name: faswin.in
           server-computer-name: https://win8104.site4now.net:8172
           server-username: ccftp
           server-password: Fasweb@2024

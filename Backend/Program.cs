@@ -32,7 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseAuthorization();
 app.MapControllers();
 
@@ -53,6 +53,9 @@ using (var scope = app.Services.CreateScope())
 
 // Serve static files (React build will be in wwwroot)
 app.UseDefaultFiles();
+app.UseDeveloperExceptionPage();
 app.UseStaticFiles();
+app.UseRouting();
+app.MapFallbackToFile("index.html"); // For React Router support
 
 app.Run();

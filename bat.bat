@@ -18,4 +18,4 @@ dotnet publish -c Release -o publish
 
 echo.
 echo === Build Complete! ===
-echo pause
+echo You can find the published backend in the 'publish' folder.

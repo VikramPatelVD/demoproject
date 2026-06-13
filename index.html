@@ -1,0 +1,719 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Combined Courier offers industry-leading Courier & Logistics Delivery, and corporate upskilling solutions."
+    />
+    <meta
+      name="keywords"
+      content="Combined Courier, Courier Services, Logistics, Delivery, Dispatch, Parcel, Packet, Postal, Goods, Transport, Transit services, Pickup, Fast Delivery, Same-day Delivery, Next-day Delivery, Express Shipping, Delivery Solutions, All-in-One Courier Services"
+    />
+    <meta name="author" content="Combined Courier" />
+
+    <!-- Title & Favicon -->
+    <title>Combined Courier || All-in-One Courier Services</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity=""
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="preloader">
+      <div class="loader-circle"></div>
+      <p>Launching your courier journey</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Dark / Light Mode Toggle -->
+    <button id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <!-- Simple text logo; replace with image if desired -->
+          <span class="logo-icon"><i class="fas fa-laptop-code"></i></span>
+          <span class="logo-text">Combined<span>Courier</span></span>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#corporate" class="nav-link">Corporate Training</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-tagline">
+            Professional IT & Computer Training for Tomorrow’s Innovators
+          </p>
+          <h1>
+            Empowering Your Future with
+            <span class="accent">Industry-Leading IT Training</span>
+          </h1>
+          <p class="hero-subtitle">
+            Hands-on courses, expert trainers, and globally recognised
+            certifications designed to accelerate your tech career.
+          </p>
+          <div class="hero-cta">
+            <a href="#courses" class="btn btn-primary">Explore Courses</a>
+            <a href="#contact" class="btn btn-outline">Get Free Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="counter" data-target="10000">0</span><span>+</span>
+              <p>Professionals Trained</p>
+            </div>
+            <div class="stat">
+              <span class="counter" data-target="150">0</span><span>+</span>
+              <p>Corporate Clients</p>
+            </div>
+            <div class="stat">
+              <span class="counter" data-target="95">0</span><span>%</span>
+              <p>Student Satisfaction</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card glass">
+            <i class="fas fa-code"></i>
+            <h3>Real-World Projects</h3>
+            <p>
+              Build portfolio-ready applications guided by senior industry
+              experts.
+            </p>
+          </div>
+          <div class="hero-floating-icon icon-1">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="hero-floating-icon icon-2">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="hero-floating-icon icon-3">
+            <i class="fas fa-network-wired"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our <span class="accent">Courses</span></h2>
+          <p>
+            Future-ready training programs designed to match the pace of modern
+            technology.
+          </p>
+        </div>
+        <div class="courses-grid">
+          <!-- Course Card -->
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p>
+              Master full-stack development with modern languages, frameworks,
+              and best practices for scalable applications.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>
+              Learn ethical hacking, security operations, and risk management to
+              protect digital infrastructure.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud Computing</h3>
+            <p>
+              Gain expertise in AWS, Azure, and Google Cloud to architect and
+              manage cloud-native solutions.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Networking</h3>
+            <p>
+              Build strong foundations in network design, routing, switching,
+              and infrastructure management.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Data Science</h3>
+            <p>
+              Transform data into insights using Python, SQL, machine learning,
+              and visualisation tools.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI & Machine Learning</h3>
+            <p>
+              Design intelligent systems and predictive models using
+              cutting-edge AI and ML techniques.
+            </p>
+            <button class="btn btn-sm btn-secondary">View Details</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section section-alt" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <!-- Placeholder illustration box -->
+          <div class="about-illustration glass">
+            <i class="fas fa-users-cog"></i>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>About <span class="accent">TechMaster Academy</span></h2>
+          <p class="about-mission">
+            Our mission is to empower individuals and organisations with
+            future-ready technology skills, bridging the gap between academic
+            learning and real-world industry demands. We believe in practical,
+            hands-on training that transforms careers.
+          </p>
+          <h3>Why Choose Us</h3>
+          <ul class="about-list">
+            <li>
+              <i class="fas fa-check-circle"></i>10+ Years Industry Experience
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Certified Professional Trainers
+            </li>
+            <li><i class="fas fa-check-circle"></i>Hands-on Practical Labs</li>
+            <li>
+              <i class="fas fa-check-circle"></i>Flexible Online & Offline
+              Learning
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Career Guidance & Mentorship
+            </li>
+            <li><i class="fas fa-check-circle"></i>95% Student Satisfaction</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            Globally Recognised <span class="accent">Certifications</span>
+          </h2>
+          <p>
+            Prepare for industry-leading certifications with structured learning
+            paths and expert guidance.
+          </p>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-logo">Microsoft</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">Cisco</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">AWS</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">CompTIA</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-logo">Google Cloud</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Training Section -->
+    <section class="section section-alt" id="corporate">
+      <div class="container corporate-grid">
+        <div class="corporate-content">
+          <h2>Corporate <span class="accent">Training Solutions</span></h2>
+          <p>
+            Equip your teams with the skills they need to drive digital
+            transformation. Our corporate training programs are tailored to your
+            business goals, technology stack, and workforce needs.
+          </p>
+          <ul class="corporate-list">
+            <li><i class="fas fa-building"></i>On-site corporate training</li>
+            <li><i class="fas fa-video"></i>Live online team workshops</li>
+            <li><i class="fas fa-route"></i>Customised learning paths</li>
+            <li>
+              <i class="fas fa-chart-line"></i>Employee upskilling programs
+            </li>
+            <li>
+              <i class="fas fa-certificate"></i>Certification preparation
+              bootcamps
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <div class="corporate-image">
+          <div class="corporate-illustration glass">
+            <i class="fas fa-handshake"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Support Section -->
+    <section class="section" id="career">
+      <div class="container career-grid">
+        <div class="career-content">
+          <h2>Career <span class="accent">Support</span></h2>
+          <p>
+            We go beyond training by supporting you at every step of your career
+            journey—from your first resume to your next promotion.
+          </p>
+          <ul class="career-list">
+            <li>
+              <i class="fas fa-file-alt"></i>Resume & LinkedIn profile
+              optimisation
+            </li>
+            <li>
+              <i class="fas fa-comments"></i>Mock interviews with industry
+              experts
+            </li>
+            <li>
+              <i class="fas fa-briefcase"></i>Job placement assistance &
+              referrals
+            </li>
+            <li>
+              <i class="fas fa-users"></i>Access to alumni & mentor network
+            </li>
+          </ul>
+        </div>
+        <div class="career-highlight glass">
+          <h3>Career Outcomes</h3>
+          <p>
+            Our learners have secured roles at leading technology companies and
+            global enterprises.
+          </p>
+          <div class="career-tags">
+            <span>Software Engineer</span>
+            <span>Cloud Architect</span>
+            <span>Security Analyst</span>
+            <span>Data Scientist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our <span class="accent">Students Say</span></h2>
+          <p>
+            Real stories from learners who transformed their careers with
+            TechMaster Academy.
+          </p>
+        </div>
+        <div class="testimonial-slider" id="testimonialSlider">
+          <!-- Testimonial Card -->
+          <article class="testimonial-card active">
+            <div class="testimonial-header">
+              <div class="testimonial-photo">A</div>
+              <div>
+                <h3>Alex Johnson</h3>
+                <p>Software Development Program</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “The full-stack course was incredibly practical. I built real
+              applications and landed a developer role within 3 months.”
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-photo">S</div>
+              <div>
+                <h3>Sophia Lee</h3>
+                <p>Cybersecurity Bootcamp</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “The labs and simulations were top-notch. I felt fully prepared
+              for my certification exams and my new SOC role.”
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-photo">M</div>
+              <div>
+                <h3>Mohammed Khan</h3>
+                <p>Cloud Computing Track</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “The instructors explained complex cloud concepts clearly. I now
+              manage cloud infrastructure for a global client.”
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-photo">R</div>
+              <div>
+                <h3>Rachel Green</h3>
+                <p>Data Science & AI Program</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “From statistics to machine learning, the curriculum was
+              comprehensive. The career support team helped me secure my first
+              data role.”
+            </p>
+          </article>
+        </div>
+        <div class="testimonial-controls">
+          <button id="prevTestimonial" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="nextTestimonial" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked <span class="accent">Questions</span></h2>
+          <p>
+            Find quick answers to common questions about our programs and
+            services.
+          </p>
+        </div>
+        <div class="faq-accordion" id="faqAccordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the mode of training?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We offer both online and classroom-based training, along with
+                blended models for corporate clients.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you provide certification exam preparation?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, our courses are aligned with leading certification bodies
+                and include dedicated exam preparation sessions.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Is there any placement assistance?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We provide career guidance, interview preparation, and job
+                referrals through our hiring partners and alumni network.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I pay in instalments?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, flexible payment options and instalment plans are available
+                for selected programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section section-alt" id="newsletter">
+      <div class="container newsletter-grid">
+        <div class="newsletter-content">
+          <h2>Stay Ahead with <span class="accent">Tech Insights</span></h2>
+          <p>
+            Subscribe to our newsletter for course updates, tech trends, and
+            exclusive learning resources.
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <p class="form-message" id="newsletterMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h2>Contact <span class="accent">Us</span></h2>
+          <p>
+            Have questions or need a custom training plan? Share your details
+            and we’ll get back to you.
+          </p>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="How can we help you?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit Message
+            </button>
+            <p class="form-message" id="contactMessage"></p>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map -->
+        <div class="contact-info-wrapper">
+          <h3>Get in Touch</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-location-dot"></i>123 Tech Park, Innovation
+              Street, Harrow, London, UK
+            </li>
+            <li><i class="fas fa-phone"></i>+44 (0)20 1234 5678</li>
+            <li><i class="fas fa-envelope"></i>info@techmasteracademy.com</li>
+            <li><i class="fas fa-clock"></i>Mon – Sat: 9:00 AM – 7:00 PM</li>
+          </ul>
+          <div class="map-wrapper">
+            <!-- Google Maps Placeholder (replace src with real map URL if needed) -->
+            <iframe
+              title="TechMaster Academy Location"
+              src="https://maps.google.com/maps?q=Harrow%20London&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="section cta-section">
+      <div class="container cta-content">
+        <h2>Ready to <span class="accent">Transform</span> Your Career?</h2>
+        <p>
+          Join TechMaster Academy and gain the skills, confidence, and
+          credentials to lead in the digital era.
+        </p>
+        <div class="cta-buttons">
+          <a href="#courses" class="btn btn-primary">Browse Programs</a>
+          <a href="#contact" class="btn btn-outline"
+            >Talk to a Learning Advisor</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>TechMaster Academy</h3>
+          <p>
+            Empowering professionals and organisations with future-ready
+            technology skills and globally recognised certifications.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-phone"></i> +44 (0)20 1234 5678</li>
+            <li>
+              <i class="fas fa-envelope"></i> support@techmasteracademy.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 TechMaster Academy. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

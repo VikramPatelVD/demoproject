@@ -56,6 +56,6 @@ app.UseDefaultFiles();
 app.UseDeveloperExceptionPage();
 app.UseStaticFiles();
 app.UseRouting();
-app.MapFallbackToFile("index.html"); // For React Router support
+// app.MapFallbackToFile("index.html"); // For React Router support
 
 app.Run();

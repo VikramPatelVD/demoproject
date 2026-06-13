@@ -1,5 +1,5 @@
 @echo off
-call publish.bat
+call deploy.bat
 echo Starting backend from publish folder...
 cd Backend\publish
 start dotnet backend.dll

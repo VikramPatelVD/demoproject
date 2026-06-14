@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+// app.UseCors(); // Use the default CORS policy defined above
 app.UseAuthorization();
 app.MapControllers();
 
@@ -56,6 +57,6 @@ app.UseDefaultFiles();
 app.UseDeveloperExceptionPage();
 app.UseStaticFiles();
 app.UseRouting();
-// app.MapFallbackToFile("index.html"); // For React Router support
+//app.MapFallbackToFile("index.html"); // For React Router support
 
 app.Run();

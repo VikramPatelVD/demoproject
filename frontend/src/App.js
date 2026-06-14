@@ -4,14 +4,17 @@ import UserList from "./UserList";
 import SalaryCalculator from "./SalaryCalculator"; // Looks in src folder
 import LeaveTracker from "./LeaveTracker";       // Looks in src folder
 
-const API = process.env.REACT_APP_API_URL || "/api/users";
+//const API = process.env.REACT_APP_API_URL || "/api/users";
+//const API = "http://localhost:5296/api/users";
+const API = `${process.env.REACT_APP_API_BASE}/api/users`;
+
 
 function App() {
   const [users, setUsers] = useState([]);
   const [editingUser, setEditing] = useState(null);
   const [message, setMessage] = useState("");
   const [msgColor, setMsgColor] = useState("green");
-  
+
   // State handles switching tabs ("users", "salary", or "leaves")
   const [activeTab, setActiveTab] = useState("users");
 
@@ -77,7 +80,7 @@ function App() {
 
   return (
     <div style={{ maxWidth: "900px", margin: "30px auto", fontFamily: "Arial", padding: "0 20px" }}>
-      
+
       {/* TAB BUTTON INTERFACE NAVIGATION BAR */}
       <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
         <button onClick={() => setActiveTab("users")} style={{ padding: "10px 15px", cursor: "pointer", backgroundColor: activeTab === "users" ? "#1F4E79" : "#e0e0e0", color: activeTab === "users" ? "white" : "black", border: "none", borderRadius: "4px" }}>
@@ -94,7 +97,7 @@ function App() {
       {/* VIEW TAB 1: ORIGINAL USER DEMO */}
       {activeTab === "users" && (
         <div>
-          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 217</h1>
+          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 241 live....</h1>
           {message && <p style={{ color: msgColor, border: `1px solid ${msgColor}`, padding: "10px", borderRadius: "4px", background: msgColor === "green" ? "#f0fff0" : "#fff0f0" }}>{message}</p>}
           <UserForm editingUser={editingUser} onSave={handleSave} onCancel={() => setEditing(null)} />
           <hr style={{ margin: "30px 0", borderColor: "#1F4E79" }} />

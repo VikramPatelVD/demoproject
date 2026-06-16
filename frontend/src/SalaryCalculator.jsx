@@ -17,7 +17,7 @@ const SalaryCalculator = () => {
         setBasicSalary(e.target.value);
 
         // Custom Breakdown Logic (Adjust percentage values as required)
-        const houseRent = basic * 0.70;  // 70% House Rent Allowance
+        const houseRent = basic * 0.30;  // 30% House Rent Allowance
         const medical = basic * 0.20;    // 20% Medical Allowance
         const tax = basic * 0.15;        // 15% Income Tax Deduction
         const netSalary = (basic + houseRent + medical) - tax;
@@ -100,7 +100,7 @@ const SalaryCalculator = () => {
 
                 <div style={{ background: '#f9f9f9', padding: '15px', borderRadius: '5px', marginBottom: '15px' }}>
                     <h4>Calculated Breakdown:</h4>
-                    <p>House Rent Allowance (70%): <strong>${calculations.houseRent}</strong></p>
+                    <p>House Rent Allowance (30%): <strong>${calculations.houseRent}</strong></p>
                     <p>Medical Allowance (20%): <strong>${calculations.medical}</strong></p>
                     <p>Tax Deduction (15%): <strong style={{ color: 'red' }}>-${calculations.tax}</strong></p>
                     <hr />

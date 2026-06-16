@@ -1,6 +1,10 @@
 @echo off
-call deploy.bat
-echo Starting backend from publish folder...
-cd Backend\publish
-start dotnet backend.dll
-echo Backend running at http://localhost:5000
+echo Starting Full Stack Application...
+
+:: Start the Backend in a new window
+start "Backend" cmd /k "cd backend && dotnet run"
+
+:: Start the Frontend in a new window
+start "Frontend" cmd /k "cd frontend && npm start"
+
+echo Both servers are starting in separate windows.

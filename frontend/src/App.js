@@ -6,7 +6,7 @@ import LeaveTracker from "./LeaveTracker";       // Looks in src folder
 
 // const API = "http://localhost:5000/api/users";
 // const API = process.env.REACT_APP_API_URL || "/api/users";
-const API = process.env.REACT_APP_API_URL + "/api/users";
+const API = "/api/users";
 
 
 function App() {
@@ -97,7 +97,7 @@ function App() {
       {/* VIEW TAB 1: ORIGINAL USER DEMO */}
       {activeTab === "users" && (
         <div>
-          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 543 online 14 ....</h1>
+          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 547 online 15 ....</h1>
           {message && <p style={{ color: msgColor, border: `1px solid ${msgColor}`, padding: "10px", borderRadius: "4px", background: msgColor === "green" ? "#f0fff0" : "#fff0f0" }}>{message}</p>}
           <UserForm editingUser={editingUser} onSave={handleSave} onCancel={() => setEditing(null)} />
           <hr style={{ margin: "30px 0", borderColor: "#1F4E79" }} />

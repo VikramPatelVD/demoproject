@@ -4,14 +4,13 @@ import UserList from "./UserList";
 import SalaryCalculator from "./SalaryCalculator"; // Looks in src folder
 import LeaveTracker from "./LeaveTracker";       // Looks in src folder
 
+const API =
+process.env.NODE_ENV === "development"
+? "http://localhost:5000/api/users"
+: "/api/users";
+
 // const API = "http://localhost:5000/api/users";
 // const API = "/api/users";
-
-const API =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:5000/api/users"
-    : "/api/users";
-
 // if (process.env.REACT_APP_ENV === 'development') {
 //   console.log('Running in development');
 //    const API = "http://localhost:5000/api/users";
@@ -120,7 +119,7 @@ function App() {
       {/* VIEW TAB 1: ORIGINAL USER DEMO */}
       {activeTab === "users" && (
         <div>
-          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 604 online  26 ....</h1>
+          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 624 online  27 ....</h1>
           {message && <p style={{ color: msgColor, border: `1px solid ${msgColor}`, padding: "10px", borderRadius: "4px", background: msgColor === "green" ? "#f0fff0" : "#fff0f0" }}>{message}</p>}
           <UserForm editingUser={editingUser} onSave={handleSave} onCancel={() => setEditing(null)} />
           <hr style={{ margin: "30px 0", borderColor: "#1F4E79" }} />

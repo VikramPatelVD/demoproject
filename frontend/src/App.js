@@ -5,18 +5,19 @@ import SalaryCalculator from "./SalaryCalculator"; // Looks in src folder
 import LeaveTracker from "./LeaveTracker";       // Looks in src folder
 
 // const API = "http://localhost:5000/api/users";
-const API = "/api/users";
-
-// const BASE_URL = process.env.REACT_APP_API_BASE;
-// const API = `${BASE_URL}/users`;
+// const API = "/api/users";
 
 // const API = process.env.REACT_APP_API_BASE ? `${process.env.REACT_APP_API_BASE}/api/users` : "/api/users";
+const API = process.env.REACT_APP_API_BASE ? "/api/users" : "http://localhost:5000/api/users";
 
+// const API = `${process.env.REACT_APP_API_BASE}/users`;
+// const BASE_URL = process.env.REACT_APP_API_BASE;
+// const API = `${BASE_URL}/users`;
 // const API = process.env.REACT_APP_API_BASE || "/api/users";
 // const API = "http://localhost:5000/api/users" || "/api/users";
 // const API = process.env.REACT_APP_API_URL || "/api/users";
 
-// console.log("Current API URL:", API);
+console.log("Current API URL:", API);
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -106,7 +107,7 @@ function App() {
       {/* VIEW TAB 1: ORIGINAL USER DEMO */}
       {activeTab === "users" && (
         <div>
-          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 0125 online  19 ....</h1>
+          <h1 style={{ borderBottom: "2px solid #1F4E79", paddingBottom: "10px", color: "#1F4E79" }}>User Registration — CRUD Demo 218 online  20 ....</h1>
           {message && <p style={{ color: msgColor, border: `1px solid ${msgColor}`, padding: "10px", borderRadius: "4px", background: msgColor === "green" ? "#f0fff0" : "#fff0f0" }}>{message}</p>}
           <UserForm editingUser={editingUser} onSave={handleSave} onCancel={() => setEditing(null)} />
           <hr style={{ margin: "30px 0", borderColor: "#1F4E79" }} />
